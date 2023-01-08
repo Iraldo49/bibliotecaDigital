@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SideBar Menu</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <!-- Data Tables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <style>
+        form {
+            font-size: small;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_container">
+        <div class="sidebar">
+            <h4 class="titulo"> BibliotecA digitAL </h4>
+            <ul class="linkss">
+                <li>
+                    <a href="#" >
+                      <span class="title" style="position: absolute; width: 82px;height: 21px; left: 20px; top: 11px;font-family: 'Inter';
+                      font-style: normal;font-weight: 700;font-size: 17px;line-height: 21px;color: rgba(0, 0, 0, 0.67);">Filtrar por</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="title" style="position: absolute; width: 39px;height: 17px;left: 24px;top: 60px;
+                        font-family: 'Inter';font-style: normal;font-weight: 700;font-size: 14px;line-height: 17px;
+                        color: rgba(0, 0, 0, 0.67);">Autor</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <input type="text" class="title" placeholder="Procurar" style="position: absolute;
+                        width: 180px;height: 40px;left: 20px;top: 90px;font-size: 13px;text-align: center;
+                        background: #FFFFFF;border-radius: 20px;  border-color: antiquewhite;">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="title" style="position: absolute;width: 128px;height: 17px;left: 24px;
+                        top: 159px; font-family: 'Inter';font-style: normal;font-weight: 700;font-size: 14px;
+                        line-height: 17px;color: rgba(0, 0, 0, 0.67);"> Ano de Publicação </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <input type="text" class="title" placeholder="Procurar" style="position: absolute;
+                       width: 180px;height: 40px;left: 20px;top: 200px;font-size: 13px; text-align: center;
+                        background: #FFFFFF;border-radius: 20px;  border-color: antiquewhite;">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="title" style="position: absolute;width: 51px;height: 17px;left: 30px;top: 280px;
+                        font-family: 'Inter';font-style: normal;font-weight: 700;font-size: 14px;line-height: 17px;
+                        color: rgba(0, 0, 0, 0.67);"> Género </span>
+                    </a>
+                </li>
+                <li>
+                    <label style="position: absolute;
+                    width: 64px;height: 17px;left: 34px;top: 306px; font-family: 'Inter';font-style: normal;
+                    font-weight: 700;font-size: 12px;line-height: 17px;color: rgba(0, 0, 0, 0.67);">
+                        <input type="checkbox">  Romance
+                    </label>
+                </li>
+                <li>
+                    <label style="position: absolute;width: 64px; height: 17px; left: 34px;top: 326px;
+                    font-family: 'Inter'; font-style: normal;font-weight: 700;font-size: 12px; line-height: 17px;
+                       color: rgba(0, 0, 0, 0.67);"><input type="checkbox">  Drama 
+                    </label>
+                </li>
+                <li>
+                    <label style="position: absolute; width: 64px;height: 17px;
+                    left: 34px;
+                    top: 346px;
+                    
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 17px;
+                    /* identical to box height */
+                    
+                    
+                    color: rgba(0, 0, 0, 0.67);">
+                        <input type="checkbox">  Novela  
+                    </label>
+                </li>
+                <li>
+                    <label style="position: absolute;
+                    width: 64px;
+                    height: 17px;
+                    left: 34px;
+                    top: 366px;
+                    
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 17px;
+                    /* identical to box height */
+                    
+                    
+                    color: rgba(0, 0, 0, 0.67);">
+                        <input type="checkbox">  Conto  
+                    </label>
+                </li>
+
+                <li>
+                    <label style="position: absolute;
+                    width: 64px;
+                    height: 17px;
+                    left: 34px;
+                    top: 386px;
+                    
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 17px;
+                    /* identical to box height */
+                    
+                    
+                    color: rgba(0, 0, 0, 0.67);">
+                        <input type="checkbox">  Crónica 
+                    </label>
+                </li>
+
+                
+                <li>
+                    <label style="position: absolute;
+                    width: 64px;
+                    height: 17px;
+                    left: 34px;
+                    top: 406px;
+                    
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 17px;
+                    /* identical to box height */
+                    
+                    
+                    color: rgba(0, 0, 0, 0.67);">
+                        <input type="checkbox">  Poesia
+                    </label>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="seach">
+            <input type="text" placeholder="Procurar por título, autores" style="position: absolute;
+            width: 400px;
+            height: 50px;
+            left: 100px;
+            top: 4px;
+            text-align: center;
+            background: #FFFFFF;
+            border-radius: 30px; border-color: antiquewhite;">
+            
+        </div>
+
+      
+
+       <div class="todos ">
+        <a href="#" class="all">
+
+            todos
+        </a>
+        <a href="#" class="res">
+
+            Pesquisados Recentemente 
+        </a>
+            
+            <div class="container">
+
+            </div>
+        </div>
+        
+    </div>
+    <div class="livro" style="position: absolute;
+width: 258.75px;
+height: 250px;
+left: 240px;
+top: 170px;
+
+background: #FFFFFF;">
+        <img src="Imagens/Livro 1.jpeg" alt="Avatar" style="width:100%">
+        <div class="container">
+            <h6><b>Antes de Nascer o Mundo</b></h6>
+            <p>Mia Couto</p>
+        </div>
+    </div>
+
+    <div class="card-livro1" style="position: absolute;
+    width: 258.75px;
+    height: 250px;
+    left: 523.75px;
+    top: 170px;
+    
+    background: #FFFFFF;">
+        <img src="Imagens/Livro 2.jpeg" alt="Avatar" style="width:100%">
+        <div class="container">
+            <h6><b>Antes de Nascer o Mundo</b></h6>
+            <p>Mia Couto</p>
+        </div>
+    </div>
+
+    <div class="card-livro2" style="position: absolute;
+    width: 258.75px;
+    height: 250px;
+    left: 807.5px;
+    top: 170px;
+    
+    background: #FFFFFF;">
+        <img src="Imagens/Livro 3.jpeg" alt="Avatar" style="width:100%">
+        <div class="container">
+            <h6><b>Antes de Nascer o Mundo</b></h6>
+            <p>Mia Couto</p>
+        </div>
+    </div>
+
+    <div class="card-livro3" style="position: absolute;
+    width: 258.75px;
+    height: 250px;
+    left: 1091.25px;
+    top: 170px;
+    
+    background: #FFFFFF;">
+        <img src="Imagens/Livro 4.jpeg" alt="Avatar" style="width:100%">
+        <div class="container">
+            <h6><b>Antes de Nascer o Mundo</b></h6>
+            <p>Mia Couto</p>
+        </div>
+    </div>
+    
+    </div>
+    </div>
+    </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+
+</body>
+
+</html>
